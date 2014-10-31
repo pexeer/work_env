@@ -1,0 +1,2 @@
+caption always "%{= dd}[%{g}%c%{d}] %-w%{.bW}%n %t%{-}%+w %= %{W}[%Y-%m-%d]"
+
