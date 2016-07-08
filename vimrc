@@ -43,6 +43,7 @@ set smartcase
 set hlsearch
 set incsearch
 set lazyredraw
+set colorcolumn=99
 
 set autoindent
 set showmatch
@@ -92,6 +93,7 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-l> <C-W>l
 
+nmap <leader>t :TagbarToggle<cr>
 " vim tabs
 "autocmd BufReadPost * tab ball
 map <leader>j :tabp<cr>
@@ -108,4 +110,6 @@ map <silent> <leader><cr> :noh<cr>
 
 map <leader>bd :Bclose<cr>
 map <leader>ba :1,1000 bd!<cr>
+
+"execute pathogen#infect()
 
