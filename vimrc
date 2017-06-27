@@ -1,5 +1,6 @@
 set nocompatible
 set nobackup
+set noundofile
 set nowb
 set noswapfile
 
