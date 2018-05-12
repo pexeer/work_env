@@ -37,7 +37,10 @@ cd -P "$MARKPATH/$m" 2>/dev/null || echo "No such mark: $m"
 }
 
 function lm {
-ls -l "$MARKPATH" | grep ^l | cut -d ' ' -f 10-13
+    for item in `ls $MARKPATH`; do
+        printf "\033[31m%-7s\033[0m\t=>" "$item"
+        readlink -f "$item"
+    done
 }
 
 # for auto-completion
